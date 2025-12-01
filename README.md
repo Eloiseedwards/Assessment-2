@@ -3,6 +3,17 @@
 
 ## Reading Order
 
+All report content is in the directory Report/
+
+The reading order of the content is:
+
+* 01-Introduction
+* 02-finBERT
+* 03-distilBERT
+* 04-LDA
+* 05-LLM
+* 06-Wrapup
+
 ## Requirements
 
 ## Description
