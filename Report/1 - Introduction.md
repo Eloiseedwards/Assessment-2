@@ -12,4 +12,4 @@ Methods we compare include:
 *	Latent Dirichlet Allocation – model used for topic modelling
 *	FinGPT – Financial specific generative pretrained transformer, a large language model (LLM)
 	
-As we are comparing larger, more complex models like FinBERT and FinGPT being specifically designed for tasks such as financial sentiment analysis, and the smaller, simpler models DistilBERT and LDA, we aim to conclude which model can best balance computational intensity with predictive performance.
+As we are comparing larger, more complex models like FinBERT and FinGPT being specifically designed for tasks such as financial sentiment analysis, and the smaller, simpler models DistilBERT and LDA, we aim to conclude which model can best balance computational efficiency with predictive performance.
