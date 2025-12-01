@@ -13,6 +13,11 @@ Furthermore whilst finBERT has been trained on financial language it sometimes r
 
 Finally, finBERT uses a standard cross-entropy loss which treats each label as independent of the other. However, there is a natural order to the labels which, given more time, would have been good to fine-tune for. By using an ordinal loss function such as CORAL we could discourage large mistakes (eg predicting negative for a positive case) by punishing more severely based off the "distance" between true and predicted labels.
 
+## Section 4 - LDA
+Through the implementation of LDA combined with dictionary-based scoring, we successfully developed an unsupervised sentiment pipeline capable of detecting thematic market signals without reliance on labeled training data. While our evaluation confirmed that the FinBERT model yields superior classification accuracy, the LDA approach achieved a critical objective that FinBERT cannot: Interpretability. By decomposing sentiment into topics, the LDA model transforms a 'Black Box' prediction into an explainable audit trail, which is a regulatory necessity in real-worl financial applications. Furthermore, our experimentation revealed that LDA struggles with the nuance of 'Neutral' sentiment (it often simply acted as a binary filter for extreme news) which, given more time, could be more deeply studied and resolved with some adjustments to the data pre-processing. Therefore an interesting and natural extension of our analysis could be using the strenghts of both LDA and Finbert together i.e. using LDA to explain the 'why' behind FinBERT's 'what'.
+
+
 # More compute/ larger dataset
 
 With greater compute, we could fine-tune more extensively, unfreezing additional layers, performing multi-stage training, or training larger variants (e.g., RoBERTa-large FinBERT). This would improve granularity while still avoiding over fitting.
+The methods presented in the LDA notebook include many scalability solutions whilst the use of LDA in itself is already a much faster and less computationally costly approach than usuing FinBERT. Hence LDA-based methods could be preferred to Neural Network methods like FinBERT if minimising time and compute cost is essential but in a setting where high performance is more desirable, the results of this project conclude that FinBERT remains the better choice. 
