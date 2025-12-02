@@ -1,9 +1,8 @@
 # Conclusion
 
--   saying each model posed a solution to one of the drawbacks of finBERT - scale/ runtime; lack of topic sentiment; numerical reasoning
--   how each model scales
--   real-world applications - difficulty finding a large enough labelled dataset makes unsupervised techniques more appropriate
--   for current dataset, distilBERT is best (smaller so works better on smaller dataset) - finBERT tended to overfit
+Here we each summarise the key findings of our work including the challenges faced in implementing the models and the limitations of the models/ their outputs. Then we turn to the particular topic of scalability and summarise the findings and reach a conclusion to the question posed in the intro - which model best balances computational efficiency and predicitive performance? Finally we consider the limitations of our work and how it could be extended to reach deeper conclusions. 
+
+Interestingly, we found that each of the models we worked on posed a solution to one of 3 key identified limitations of finBERT - efficiency, interpretability and contextual/numerical reasoning, as explored below.
 
 ## Section 2 - finBERT
 
@@ -26,10 +25,8 @@ Overall, while FinGPT offers the potential for richer financial understanding th
 ## Section 4 - LDA
 Through the implementation of LDA combined with dictionary-based scoring, we successfully developed an unsupervised sentiment pipeline capable of detecting thematic market signals without reliance on labeled training data. While our evaluation confirmed that the FinBERT model yields superior classification accuracy, the LDA approach achieved a critical objective that FinBERT cannot: Interpretability. By decomposing sentiment into topics, the LDA model transforms a 'Black Box' prediction into an explainable audit trail, which is a regulatory necessity in real-worl financial applications. Furthermore, our experimentation revealed that LDA struggles with the nuance of 'Neutral' sentiment (it often simply acted as a binary filter for extreme news) which, given more time, could be more deeply studied and resolved with some adjustments to the data pre-processing. Therefore an interesting and natural extension of our analysis could be using the strenghts of both LDA and Finbert together i.e. using LDA to explain the 'why' behind FinBERT's 'what'.
 
-# Section 5 - DistilBERT
+## Section 5 - DistilBERT
 For sentiment prediction DistilBERT performs very well, and as discussed in section 5 it is simple and efficient to run as it has far fewer parameters. Therefore it is possibly the best model to choose that achieves our aim discussed in the introduction, of balancing performance and computational efficiency. However in section 5 we also found that it has a high loss. While this isn't an issue for predictive task as accuracy is high and stable, if say we only wanted to use the class probabilities rather than the predicted labels, this model may not be the best choice. When predicting stock price movements, if you were to use financial sentiment as a variable for prediction you may want to use these class probabilities rather than labels, and miscalibrated probabilites may cause issues down the line.  Overall, DistilBERT is ideal for small scale use or less compute and can be a highly useful model to use for financial sentiment analysis, depending on the context the output is needed for.
 
-# More compute/ larger dataset
-
-With greater compute, we could fine-tune more extensively, unfreezing additional layers, performing multi-stage training, or training larger variants (e.g., RoBERTa-large FinBERT). This would improve granularity while still avoiding over fitting.
-The methods presented in the LDA notebook include many scalability solutions whilst the use of LDA in itself is already a much faster and less computationally costly approach than usuing FinBERT. Hence LDA-based methods could be preferred to Neural Network methods like FinBERT if minimising time and compute cost is essential but in a setting where high performance is more desirable, the results of this project conclude that FinBERT remains the better choice. 
+# Scalability
+The methods presented in the LDA notebook include many scalability solutions whilst the use of LDA in itself is already a much faster and less computationally costly approach than usuing FinBERT. Hence LDA-based methods could be preferred to Neural Network methods like FinBERT if minimising time and compute cost is essential but in a setting where high performance is more desirable, the results of this project conclude that FinBERT remains the better choice. However, the exploration of distilBERT revealed this as an even better choice for our specific aim of finding the model that best balances performance and computational efficiency due to its fewer parameters. With greater compute, we could fine-tune finBERT more extensively, unfreezing additional layers, performing multi-stage training, or training larger variants (e.g., RoBERTa-large FinBERT). This would improve granularity while still avoiding over fitting. Therefore it is possible that finBERT's performance in our project was limited by the choice of dataset so to achieve a more robust conclusion a valuable extension would be to expand our analysis to larger datasets if we could access greater compute.
