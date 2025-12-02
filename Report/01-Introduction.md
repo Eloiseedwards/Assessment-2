@@ -1,6 +1,6 @@
 # 1 Introduction
 
-Throughout the project we will work with a dataset of news headlines, each of which had an assocaited financial sentiment. Our goal is to not only compare predictive performance but to also analyse the practicality of each method in a real-world setting. Financial sentiment prediction
+Throughout the project we will work with a dataset of news headlines, each of which had an associated financial sentiment. Our goal is to not only compare predictive performance but to also analyse the practicality of each method in a real-world setting. Financial sentiment prediction
 has become a widely researched topic in recent years with NLP models such as BERT increasing in popularity, because sentiment from financial news can be used to
 predict stock price movements. Our findings provide guidance to build scalable pipelines for financial sentiment analysis on a small or large scale.  Secondly,
 most financial sentiment tasks only have three labels: positive, negative and neutral. This allows for models that indicate the direction of stock movement but not necessarily the magnitude. 
