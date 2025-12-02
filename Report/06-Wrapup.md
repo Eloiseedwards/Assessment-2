@@ -1,6 +1,6 @@
 # Conclusion
 
-Here we each summarise the key findings of our work including the challenges faced in implementing the models and the limitations of the models/ their outputs. Then we turn to the particular topic of scalability and summarise the findings and reach a conclusion to the question posed in the intro - which model best balances computational efficiency and predicitive performance? Finally we consider the limitations of our work and how it could be extended to reach deeper conclusions. 
+Here we each summarise the key findings of our work including the challenges faced in implementing the models and the limitations of the models/ their outputs. Then we turn to the particular topic of scalability and summarise the findings and reach a conclusion to the question posed in the introduction - which model best balances computational efficiency and predicitive performance? Finally we consider the limitations of our work and how it could be extended to reach deeper conclusions. 
 
 Interestingly, we found that each of the models we worked on posed a solution to one of 3 key identified limitations of finBERT - efficiency, interpretability and contextual/numerical reasoning, as explored below.
 
