@@ -1,18 +1,20 @@
 # DST Assessment-2
 ## Project Group
+Eloise Edwards, Isobelle Clemmens, Daniel Mir, Nadia Kusneraitis.
 
+Equal Equity.
 ## Reading Order
 
 All report content is in the directory Report/
 
 The reading order of the content is:
 
-* 01-Introduction
-* 02-finBERT
-* 03-distilBERT
-* 04-LDA
-* 05-LLM
-* 06-Wrapup
+* 01-Introduction.md
+* 02-finBERT.ipynb
+* 03-distilBERT.ipynb
+* 04-LDA.ipynb
+* 05-LLM.ipynb
+* 06-Wrapup.md
 
 ## Requirements
 
