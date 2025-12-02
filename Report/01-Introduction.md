@@ -13,5 +13,7 @@ Methods we compare include:
 *	DistilBERT – the distilled, more efficient variant of BERT
 *	Latent Dirichlet Allocation – model used for topic modelling
 *	FinGPT – Financial specific generative pretrained transformer, a large language model (LLM)
+
+We chose this selection of models because each posed a solution to one of 3 key identified limitations of finBERT - efficiency (distilBERT), interpretability (LDA) and contextual/numerical reasoning (LLMs).
 	
 As we are comparing larger, more complex models like FinBERT and FinGPT being specifically designed for tasks such as financial sentiment analysis, and the smaller, simpler models DistilBERT and LDA, we aim to conclude which model can best balance computational efficiency with predictive performance.
