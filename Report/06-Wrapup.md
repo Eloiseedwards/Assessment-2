@@ -2,8 +2,6 @@
 
 Here we each summarise the key findings of our work including the challenges faced in implementing the models and the limitations of the models/ their outputs. Then we turn to the particular topic of scalability and summarise the findings and reach a conclusion to the question posed in the introduction - which model best balances computational efficiency and predicitive performance? Finally we consider the limitations of our work and how it could be extended to reach deeper conclusions. 
 
-Interestingly, we found that each of the models we worked on posed a solution to one of 3 key identified limitations of finBERT - efficiency, interpretability and contextual/numerical reasoning, as explored below.
-
 ## Section 2 - finBERT
 
 Attempting to fine-tune the finBERT model for this data set consisted of a number of challenges due to the imbalance of the classes and the size of the data set which is small relatively small compared to the number of parameters in the finBERT model - which resulted in a highly overfitted model. We attempted to solve these problems through regularization (such as weight decay) and by using a weighted loss function. Whilst this helped to prevent over fitting it did so by sacrificing some performance (reduction in accuracy across classes) and it was difficult to optimize to find a balance due to the limited compute and long training times (\~1 hour).
