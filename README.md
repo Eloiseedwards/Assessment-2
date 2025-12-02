@@ -11,9 +11,9 @@ The reading order of the content is:
 
 * 01-Introduction.md
 * 02-finBERT.ipynb
-* 03-distilBERT.ipynb
+* 03-finGPT.ipynb
 * 04-LDA.ipynb
-* 05-LLM.ipynb
+* 05-distilBERT.ipynb
 * 06-Wrapup.md
 
 ## Requirements
