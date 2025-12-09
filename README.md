@@ -21,7 +21,7 @@ The reading order of the content is:
 
 ## Requirements
 
-The requirments for each file are included in the individual notebooks. They were each built in colab so have the relevant requirments for being ran in colab.
+The requirments for each file are included in the individual notebooks. They were each built in colab so have the relevant requirments for running in colab.
 
 ## Description
 
