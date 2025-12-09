@@ -10,13 +10,18 @@ All report content is in the directory Report/
 The reading order of the content is:
 
 * 01-Introduction.md
-* 02-finBERT.ipynb
-* 03-finGPT.ipynb
+* 02.1 finBERT.ipynb
+* 02.2 Weighted_finBERT.ipynb
+* 02.3 Model_performance.ipynb
+* 02.4 Ordinal_finBERT & Conclusion.ipynb
+* 03.FinGPT.ipynb
 * 04-LDA.ipynb
-* 05-distilBERT.ipynb
+* 05 - DistilBERT_clean.ipynb
 * 06-Wrapup.md
 
 ## Requirements
+
+The requirments for each file are included in the individual notebooks. They were each built in colab so have the relevant requirments for being ran in colab.
 
 ## Description
 
